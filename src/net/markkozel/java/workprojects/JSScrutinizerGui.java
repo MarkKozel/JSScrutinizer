@@ -1,25 +1,26 @@
 package net.markkozel.java.workprojects;
 
-import java.awt.BorderLayout;
+//import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
-import javax.swing.JToolBar;
+//import javax.swing.JToolBar;
 import javax.swing.JMenuBar;
 import javax.swing.JMenu;
 import javax.swing.JMenuItem;
 import javax.swing.JCheckBox;
-import javax.swing.border.SoftBevelBorder;
-import javax.swing.border.BevelBorder;
-import javax.swing.JLabel;
+//import javax.swing.border.SoftBevelBorder;
+//import javax.swing.border.BevelBorder;
+//import javax.swing.JLabel;
 import javax.swing.border.TitledBorder;
 import javax.swing.UIManager;
 import java.awt.Color;
 
 public class JSScrutinizerGui extends JFrame {
 
+	static final long serialVersionUID = 672659595;
 	private JPanel contentPane;
 
 	/**
@@ -73,16 +74,16 @@ public class JSScrutinizerGui extends JFrame {
 		
 		JPanel panelTestSelector = new JPanel();
 		panelTestSelector.setBorder(new TitledBorder(UIManager.getBorder("TitledBorder.border"), "Test Selection", TitledBorder.LEADING, TitledBorder.TOP, null, Color.BLACK));
-		panelTestSelector.setBounds(32, 42, 151, 96);
+		panelTestSelector.setBounds(32, 42, 201, 96);
 		contentPane.add(panelTestSelector);
 		panelTestSelector.setLayout(null);
 		
 		JCheckBox chckbxUnusedMethods = new JCheckBox("Unused Methods");
-		chckbxUnusedMethods.setBounds(20, 20, 105, 23);
+		chckbxUnusedMethods.setBounds(20, 20, 127, 23);
 		panelTestSelector.add(chckbxUnusedMethods);
 		
 		JCheckBox chckbxUnusedVariables = new JCheckBox("Unused Variables");
-		chckbxUnusedVariables.setBounds(20, 46, 107, 23);
+		chckbxUnusedVariables.setBounds(20, 46, 127, 23);
 		panelTestSelector.add(chckbxUnusedVariables);
 	}
 }
